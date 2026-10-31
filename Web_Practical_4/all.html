@@ -1,0 +1,61 @@
+<!DOCTYPE html><html lang="en"><head><title>Web Practical 4 | Three Layouts</title><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Практична робота з вебпрограмування: верстка трьох макетів за референсами."><link rel="stylesheet" href="style.css"><script src="script.js" defer></script></head><body class="all-page"><nav class="all-navigation"><a href="#reputation">Reputation</a><a href="#about">About Us</a><a href="#travel">Travel</a></nav><main><section class="reputation" id="reputation">
+  <div class="rep-inner">
+    <h1>A Trusted Reputation Built Over Time</h1>
+    <p class="rep-subtitle">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+    <div class="rep-grid" aria-label="Company achievements gallery">
+      <img class="rep-image rep-team" src="images/team-planning.jpg" alt="Architects discussing plans">
+      <div class="rep-number rep-projects"><strong>10k</strong><span>Completed Projects</span></div>
+      <img class="rep-image rep-engineer" src="images/female-engineer.jpg" alt="Engineer holding building plans">
+      <img class="rep-image rep-site" src="images/site-manager.jpg" alt="Construction manager on site">
+      <div class="rep-number rep-years"><strong>40+</strong><span>Years Established</span></div>
+      <img class="rep-image rep-manager" src="images/project-manager.jpg" alt="Project manager with hard hat and laptop">
+    </div>
+    <p class="image-credit">Images from <a href="https://www.freepik.com/" target="_blank" rel="noopener noreferrer">Freepik</a></p>
+  </div>
+</section><section class="about-section" id="about">
+<div class="about-inner">
+    <div class="about-row about-row-right">
+      <div class="about-empty" aria-hidden="true"></div>
+      <img class="about-circle" src="images/pexels-photo-3914752.jpg" alt="Geometric modern architecture">
+      <article class="about-card">
+        <h2>About Us</h2>
+        <p>While we were not the first home cleaning company in the UK, we take pride in being market.</p>
+        <button class="read-more" type="button" aria-expanded="false" data-detail="about-more">READ MORE</button>
+        <p class="hidden-description" id="about-more" hidden>Our team focuses on quality, reliability and attention to detail in every project.</p>
+      </article>
+    </div>
+    <div class="about-row about-row-left">
+      <article class="about-card">
+        <h2>What We Do</h2>
+        <p>While we were not the first home cleaning company in the UK, we take pride in being market.</p>
+        <button class="read-more" type="button" aria-expanded="false" data-detail="services-more">READ MORE</button>
+        <p class="hidden-description" id="services-more" hidden>We work with our clients to deliver simple, dependable solutions.</p>
+      </article>
+      <img class="about-circle" src="images/pexels-mohamed-abdelsadig-3196486.jpg" alt="Minimalist corridor between buildings">
+      <div class="about-empty" aria-hidden="true"></div>
+    </div>
+    <div class="about-row about-row-right">
+      <div class="about-empty" aria-hidden="true"></div>
+      <img class="about-circle" src="images/pexels-harry-shum-12694483.jpg" alt="Black and white geometry of a building">
+      <article class="about-card">
+        <h2>Who We Are</h2>
+        <p>While we were not the first home cleaning company in the UK, we take pride in being market.</p>
+        <button class="read-more" type="button" aria-expanded="false" data-detail="team-more">READ MORE</button>
+        <p class="hidden-description" id="team-more" hidden>We are a team that values trust, clear communication and great service.</p>
+      </article>
+    </div>
+</div>
+</section><section class="travel-section" id="travel">
+  <div class="travel-inner">
+    <h1>Speak to our expert<br>at <span class="phone-symbol">☎</span> <a href="tel:18004536744" class="phone-number">1-800-453-6744</a></h1>
+    <div class="travel-grid" aria-label="Travel destinations">
+      <button class="destination dolomites" data-place="Dolomite Alps" type="button" style="--bg:url('images/bnbn.jpg')"><span>Dolomite Alps</span></button>
+      <button class="destination iceland" data-place="Iceland" type="button" style="--bg:url('images/jkkjjk.jpg')"><span>Iceland</span></button>
+      <button class="destination ethiopia" data-place="Ethiopia" type="button" style="--bg:url('images/rtrt.jpg')"><span>Ethiopia</span></button>
+      <button class="destination nepal" data-place="Nepal" type="button" style="--bg:url('images/tt.jpg')"><span>Nepal</span></button>
+      <button class="destination kenya" data-place="Kenya" type="button" style="--bg:url('images/jhjhjh.jpg')"><span>Kenya</span></button>
+      <button class="destination zealand" data-place="New Zealand" type="button" style="--bg:url('images/nbn.jpg')"><span>New Zealand</span></button>
+    </div>
+    <p class="travel-credit">Images from <a href="https://www.freepik.com/" target="_blank" rel="noopener noreferrer">Freepik</a></p>
+  </div>
+</section></main><nav class="other-pages" aria-label="Інші макети практичної"><a href="index.html">1. Reputation</a><a href="about.html">2. About Us</a><a href="travel.html">3. Travel</a><a href="all.html">Усі разом</a></nav></body></html>

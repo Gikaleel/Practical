@@ -1,0 +1,61 @@
+/* Практична робота №1: картки маркетингових послуг. */
+:root {
+  --dark: #191a20;
+  --green: #b9ff66;
+  --light: #f3f3f3;
+  --ink: #151515;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #000; color: var(--ink); font-family: Arial, Helvetica, sans-serif; }
+button { font: inherit; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+.services { max-width: 1744px; margin: 0 auto; }
+.services-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 56px; row-gap: 52px; }
+.service-card { position: relative; aspect-ratio: 1.93; min-height: 360px; border-radius: 67px; overflow: hidden; padding: clamp(30px, 3.4vw, 70px); isolation: isolate; }
+.card--light { background: var(--light); }
+.card--green { background: var(--green); }
+.card--dark { background: var(--dark); color: #fff; }
+.card-title { position: relative; z-index: 1; margin: 0; font-size: clamp(24px, 2.25vw, 46px); line-height: 1.18; letter-spacing: -1.5px; font-weight: 500; }
+.highlight { padding: 1px 9px 3px; border-radius: 10px; -webkit-box-decoration-break: clone; box-decoration-break: clone; color: #000; }
+.highlight--green { background: var(--green); }
+.highlight--white { background: #fff; }
+.card-illustration { position: absolute; z-index: 0; right: 6.5%; top: 17%; width: 37%; height: 63%; object-fit: contain; }
+.learn-more { position: absolute; z-index: 2; bottom: 13%; left: clamp(30px, 3.4vw, 70px); display: inline-flex; align-items: center; gap: 20px; padding: 0; border: none; background: transparent; cursor: pointer; color: inherit; font-size: clamp(17px, 1.4vw, 27px); white-space: nowrap; }
+.round-arrow { display: grid; place-items: center; width: 60px; height: 60px; flex: 0 0 60px; border-radius: 50%; background: var(--dark); color: var(--green); font-size: 47px; font-weight: 400; line-height: 1; padding-bottom: 5px; transition: transform .2s ease; }
+.card--dark .round-arrow { background: #fff; color: #111; }
+.learn-more:hover .round-arrow { transform: rotate(45deg); }
+.learn-more:focus-visible, .page-footer a:focus-visible, .dialog-close:focus-visible { outline: 3px solid #60a5fa; outline-offset: 6px; }
+.page-footer { max-width: 1744px; margin: 12px auto 0; padding: 24px 10px 32px; color: #d5d5d5; text-align: center; font-size: 15px; }
+.page-footer a { color: var(--green); text-underline-offset: 4px; }
+.service-dialog { max-width: min(520px, calc(100vw - 36px)); padding: 0; border: 0; border-radius: 20px; color: var(--ink); background: var(--light); box-shadow: 0 24px 80px #0008; }
+.service-dialog::backdrop { background: #000b; }
+.dialog-content { position: relative; padding: 36px; }
+.dialog-content h2 { margin: 0 34px 16px 0; font-size: 27px; }
+.dialog-content p { margin: 0; font-size: 18px; line-height: 1.55; }
+.dialog-close { position: absolute; right: 14px; top: 8px; border: 0; background: transparent; color: var(--ink); font-size: 36px; cursor: pointer; }
+@media (max-width: 1850px) { .services { margin: 0 5.2%; } }
+@media (max-width: 1050px) {
+  .services-grid { column-gap: 22px; row-gap: 24px; }
+  .service-card { min-height: 280px; border-radius: 38px; }
+  .card-title { font-size: clamp(23px, 2.6vw, 30px); }
+  .round-arrow { width: 44px; height: 44px; flex-basis: 44px; font-size: 35px; }
+}
+@media (max-width: 720px) {
+  .services { margin: 18px; }
+  .services-grid { grid-template-columns: minmax(0, 1fr); gap: 22px; }
+  .service-card { aspect-ratio: 1.55; min-height: 250px; padding: 32px; border-radius: 38px; }
+  .card-title { font-size: clamp(25px, 5vw, 38px); letter-spacing: -.7px; }
+  .card-illustration { width: 39%; right: 5%; top: 20%; }
+  .learn-more { left: 32px; bottom: 12%; font-size: 20px; gap: 13px; }
+}
+@media (max-width: 420px) {
+  .services { margin: 10px; }
+  .service-card { aspect-ratio: 1.40; min-height: 245px; padding: 22px; border-radius: 28px; }
+  .card-title { font-size: 24px; }
+  .highlight { padding: 1px 6px 2px; border-radius: 6px; }
+  .card-illustration { width: 42%; top: 25%; }
+  .learn-more { left: 22px; font-size: 17px; bottom: 10%; }
+  .round-arrow { width: 37px; height: 37px; flex-basis: 37px; font-size: 29px; }
+}

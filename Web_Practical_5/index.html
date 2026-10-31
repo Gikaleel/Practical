@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Organic Breads — a family bakery with handmade breads, pastries and sweets.">
+  <title>Organic Breads | Family Bakery</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <a class="brand" href="#home" aria-label="Back to start">logo</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="navigation" id="main-nav" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#features">About us</a>
+        <a href="#breads">Our breads</a>
+        <a href="#sweets">Sweets</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. Hero / Introductory block -->
+    <section class="hero" id="home" aria-labelledby="hero-heading">
+      <img class="hero-decoration hero-decoration-left" src="images/hero-bread-left.jpg" alt="Fresh rolls and loaves of bread">
+      <img class="hero-decoration hero-decoration-right" src="images/hero-bread-right.jpg" alt="Fresh bread in a basket">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <p class="hero-eyebrow">Family Bakery</p>
+          <h1 id="hero-heading">Organic<br>Breads</h1>
+          <p class="photo-credit">Image from <a href="https://www.freepik.com/" target="_blank" rel="noopener noreferrer">Freepik</a></p>
+          <div class="hero-contact" id="contact">
+            <div>
+              <h2>Find us</h2>
+              <p>121 Rock Street, 21 Avenue,<br>New York, NY 92103-9000</p>
+            </div>
+            <div>
+              <h2>Hours</h2>
+              <p><strong>Monday – Saturday</strong><br>9am – 7pm<br><strong>Sunday</strong><br>10am – 6pm</p>
+            </div>
+            <div>
+              <h2>Call us</h2>
+              <p><a href="tel:+1234567891">1 (234) 567-891</a></p>
+              <p><a href="tel:+1234533897">2 (345) 333-897</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Six feature cards -->
+    <section class="features section" id="features" aria-labelledby="features-title">
+      <div class="content-wrap">
+        <h2 class="section-title" id="features-title">Delicious Baking</h2>
+        <div class="features-grid">
+          <article class="feature"><span class="feature-icon" aria-hidden="true">🥖</span><div><h3>Baked Fresh Daily</h3><p>Our bread is baked fresh daily, contains no preservatives and is very high in quality. It is also especially nice and soft.</p></div></article>
+          <article class="feature"><span class="feature-icon" aria-hidden="true">♨️</span><div><h3>Great Value</h3><p>With the most competitive prices on the market we are able to deliver great value without compromising on taste.</p></div></article>
+          <article class="feature"><span class="feature-icon" aria-hidden="true">🏫</span><div><h3>Institutions</h3><p>We serve a wide range of institutions, including universities, airlines, hotels and schools. Order daily for tomorrow.</p></div></article>
+          <article class="feature"><span class="feature-icon" aria-hidden="true">🚚</span><div><h3>Delivery To Your Door</h3><p>We offer convenient local delivery. Freshly baked bread brought straight to your door.</p></div></article>
+          <article class="feature"><span class="feature-icon" aria-hidden="true">📦</span><div><h3>No Order Too Large</h3><p>Whether you need a few loaves or a large order, our team is ready to prepare it for you.</p></div></article>
+          <article class="feature"><span class="feature-icon" aria-hidden="true">🥐</span><div><h3>Delicious Baking</h3><p>From warm breads to sweet pastries, everything is prepared with care and attention to detail.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Black promotional block -->
+    <section class="fresh" aria-labelledby="fresh-title">
+      <div class="fresh-image" role="img" aria-label="Rustic handmade bread wrapped in linen"></div>
+      <div class="fresh-copy">
+        <div>
+          <h2 id="fresh-title">Fresh breads, cakes<br>and pastries</h2>
+          <p>Nibh venenatis cras sed felis eget velit aliquet sagittis id. Nisl pretium fusce id velit ut tortor pretium.</p>
+          <p class="small-credit">Image from <a href="https://www.freepik.com/" target="_blank" rel="noopener noreferrer">Freepik</a></p>
+          <a class="outline-button" href="#breads">Read more</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Products -->
+    <section class="products section" id="breads" aria-labelledby="breads-title">
+      <div class="content-wrap">
+        <h2 class="section-title" id="breads-title">Our Breads</h2>
+        <div class="products-grid">
+          <article class="product-card"><img src="images/bread-white.jpg" alt="Round loaf of white bread"><h3>White Bread</h3><p>Freshly baked white bread with a golden crust and soft centre.</p><button type="button" class="product-more" data-product="White Bread">more</button></article>
+          <article class="product-card"><img src="images/bread-farming.jpg" alt="Round farming bread on a dark table"><h3>Farming Bread</h3><p>Rustic artisan loaf prepared with traditional baking methods.</p><button type="button" class="product-more" data-product="Farming Bread">more</button></article>
+          <article class="product-card"><img src="images/bread-loaf.jpg" alt="Golden oval loaf of bread"><h3>Loaf Bread</h3><p>A simple everyday loaf, baked fresh with a crisp crust.</p><button type="button" class="product-more" data-product="Loaf Bread">more</button></article>
+          <article class="product-card"><img src="images/bread-sourdough.jpg" alt="Two round sourdough loaves"><h3>Sourdough</h3><p>Slowly fermented bread with a rich flavour and satisfying texture.</p><button type="button" class="product-more" data-product="Sourdough">more</button></article>
+          <article class="product-card"><img src="images/bread-olive.jpg" alt="Sliced olive bread"><h3>Olive Bread</h3><p>Light, aromatic bread that goes beautifully with savoury meals.</p><button type="button" class="product-more" data-product="Olive Bread">more</button></article>
+          <article class="product-card"><img src="images/bread-wholegrain.jpg" alt="Whole-grain bread sliced open"><h3>Whole-Grain<br>Bread</h3><p>Hearty whole-grain bread, freshly prepared for every day.</p><button type="button" class="product-more" data-product="Whole-Grain Bread">more</button></article>
+          <article class="product-card"><img src="images/bread-country.jpg" alt="Country style artisan bread"><h3>Farming Bread</h3><p>Traditional country loaf with a crunchy, golden crust.</p><button type="button" class="product-more" data-product="Country Farming Bread">more</button></article>
+          <article class="product-card"><img src="images/bread-baguette.jpg" alt="Two long golden baguettes"><h3>Baguette</h3><p>A classic crusty baguette, perfect with breakfast or lunch.</p><button type="button" class="product-more" data-product="Baguette">more</button></article>
+        </div>
+        <p class="center-credit">Images from <a href="https://www.freepik.com/" target="_blank" rel="noopener noreferrer">Freepik</a></p>
+      </div>
+    </section>
+
+    <!-- 5. Images + quality information -->
+    <section class="quality" id="quality" aria-labelledby="quality-title">
+      <div class="quality-panel">
+        <div class="quality-collage content-wrap">
+          <h2 id="quality-title">Delicious<br>Baking.<br>Exceptional<br>Quality.</h2>
+          <img class="quality-photo" src="images/quality-bread.jpg" alt="Handmade bread on a rustic wooden table">
+          <img class="baker-photo" src="images/baker.jpg" alt="Baker standing behind fresh bread">
+        </div>
+      </div>
+      <div class="quality-details content-wrap">
+        <h3>We produce delicious bread, rolls and other products</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <p class="small-credit">Image from <a href="https://www.freepik.com/" target="_blank" rel="noopener noreferrer">Freepik</a></p>
+        <a href="#sweets" class="light-button">Learn more</a>
+      </div>
+    </section>
+
+    <!-- 6. Sweets menu -->
+    <section class="sweets" id="sweets" aria-labelledby="sweets-title">
+      <div class="content-wrap sweets-content">
+        <h2 class="section-title" id="sweets-title">Sweets Menu</h2>
+        <div class="sweets-grid">
+          <article class="sweets-card"><h3>Cookies</h3><ul><li>Biscotti</li><li>Chocolate Chip</li><li>Oatmeal Pecan</li><li>Oat Ginger Bar</li><li>Seasonal specials</li></ul></article>
+          <article class="sweets-card"><h3>Scones</h3><ul><li>Classic butter scone</li><li>Fresh fruit buttermilk scones</li><li>Handmade scones</li></ul></article>
+          <article class="sweets-card"><h3>Other</h3><ul><li>Seasonal galettes</li><li>Tartlets</li><li>Banana Bread</li><li>Bread Pudding</li><li>Cranberry Pecan Granola</li></ul></article>
+        </div>
+        <p class="sweets-credit">Image from <a href="https://www.freepik.com/" target="_blank" rel="noopener noreferrer">Freepik</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><p>© Organic Breads. Student practical website based on the supplied reference.</p><a href="#home">Back to top ↑</a></footer>
+  <dialog class="product-dialog" id="product-dialog" aria-labelledby="dialog-title">
+    <button class="dialog-close" type="button" aria-label="Close product information">×</button>
+    <h2 id="dialog-title"></h2>
+    <p>Freshly baked with care at our family bakery. Visit us or call for more information.</p>
+    <a href="#contact" class="dialog-contact">Contact the bakery</a>
+  </dialog>
+</body>
+</html>

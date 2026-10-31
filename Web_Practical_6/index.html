@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Forefathers - a pronounced web agency building for the modern demand.">
+  <meta name="theme-color" content="#151211">
+  <title>Forefathers | Creative Web Agency</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main id="home" class="hero">
+    <header class="header" aria-label="Main navigation">
+      <nav class="desktop-nav" aria-label="Agency pages">
+        <button class="nav-link" type="button" data-panel="work">Work</button>
+        <button class="nav-link" type="button" data-panel="expertise">Expertise</button>
+        <button class="nav-link" type="button" data-panel="stories">Short Stories</button>
+        <button class="nav-link" type="button" data-panel="goods">Goods</button>
+      </nav>
+
+      <a class="brand-mark" href="#home" aria-label="Forefathers home">
+        <img src="assets/logo.svg" alt="Forefathers monogram" width="28" height="43">
+      </a>
+
+      <button class="start-button" type="button" data-panel="project">Start a Project</button>
+
+      <nav class="compact-nav" aria-label="Agency pages on narrow screens">
+        <button class="nav-link" type="button" data-panel="work">Work</button>
+        <button class="nav-link" type="button" data-panel="expertise">Expertise</button>
+        <button class="nav-link" type="button" data-panel="stories">Short Stories</button>
+        <button class="nav-link" type="button" data-panel="goods">Goods</button>
+        <button class="nav-link" type="button" data-panel="project">Hire Us</button>
+      </nav>
+
+      <button class="mobile-menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-navigation" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="mobile-nav" id="mobile-navigation" aria-label="Mobile navigation" hidden>
+        <button type="button" data-panel="work">Work</button>
+        <button type="button" data-panel="expertise">Expertise</button>
+        <button type="button" data-panel="stories">Short Stories</button>
+        <button type="button" data-panel="goods">Goods</button>
+        <button type="button" data-panel="project">Hire Us</button>
+      </nav>
+    </header>
+
+    <h1 class="hero-title">FOREFATHERS</h1>
+    <p class="hero-tagline">A Pronounced Web Agency <span aria-hidden="true">★</span> Building for the Modern Demand</p>
+    <p class="hero-description">We're Forefathers Group, an agency of fortuitous gentlemen carving a path through the digital landscape with knowledge and determination.</p>
+
+    <button class="round-arrow" type="button" data-panel="about" aria-label="Read about Forefathers">
+      <svg class="round-arrow-text" viewBox="0 0 160 160" aria-hidden="true">
+        <defs>
+          <path id="circle-text" d="M 80,80 m -58,0 a 58,58 0 1,1 116,0 a 58,58 0 1,1 -116,0"></path>
+        </defs>
+        <text><textPath href="#circle-text" startOffset="6%">DESIGN FROM HERE · THE NEW · </textPath></text>
+        <path d="M80 62 v35 M69 87 l11 11 11-11" class="arrow-stroke" />
+      </svg>
+    </button>
+
+    <img class="hero-emblems" src="assets/hero-emblems.png" alt="Global Publications emblem and established July 4th, 2011" width="600" height="342">
+  </main>
+
+  <dialog id="info-dialog" class="info-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-top">
+      <span class="dialog-kicker">Forefathers Group</span>
+      <button type="button" class="close-dialog" aria-label="Close window">×</button>
+    </div>
+    <div id="dialog-content" class="dialog-content"></div>
+  </dialog>
+</body>
+</html>

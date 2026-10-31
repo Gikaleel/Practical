@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lessons and Practice: courses, educational programs and international partners.">
+  <title>Lessons &amp; Practice | Educational Website</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main>
+    <!-- The first screen with lessons and subjects -->
+    <div class="blue-area">
+      <section class="hero wrapper" id="home" aria-labelledby="hero-heading">
+        <div class="hero-picture">
+          <img src="images/bbvv.jpg" alt="Smiling teacher holding a blue folder" class="hero-photo">
+        </div>
+        <div class="hero-right">
+          <h1 id="hero-heading">Lessons &amp; Practice</h1>
+          <div class="subject-grid" aria-label="Available subjects">
+            <button class="subject-card" type="button" data-subject="Math">
+              <span class="subject-icon"><img src="images/maths.png" alt=""></span>
+              <span>Math</span>
+            </button>
+            <button class="subject-card" type="button" data-subject="Physics">
+              <span class="subject-icon"><img src="images/atom.png" alt=""></span>
+              <span>Physics</span>
+            </button>
+            <button class="subject-card" type="button" data-subject="Medicine">
+              <span class="subject-icon"><img src="images/medicine.png" alt=""></span>
+              <span>Medicine</span>
+            </button>
+            <button class="subject-card" type="button" data-subject="English">
+              <span class="subject-icon"><img src="images/english-language.png" alt=""></span>
+              <span>English</span>
+            </button>
+            <button class="subject-card" type="button" data-subject="Technology">
+              <span class="subject-icon"><img src="images/technology.png" alt=""></span>
+              <span>Technology</span>
+            </button>
+            <button class="subject-card" type="button" data-subject="Engineering">
+              <span class="subject-icon"><img src="images/smart-watch.png" alt=""></span>
+              <span>Engineering</span>
+            </button>
+          </div>
+          <p class="subject-feedback" id="subject-feedback" aria-live="polite"></p>
+        </div>
+        <p class="image-credit hero-credit">Images from supplied materials</p>
+      </section>
+
+      <!-- Partners -->
+      <section class="partners wrapper" id="partners" aria-labelledby="partners-heading">
+        <div class="section-heading">
+          <h2 id="partners-heading">Meet some of our partners!</h2>
+          <p>We collaborate with schools and educators around the world<br class="desktop-only"> to make learning exciting and accessible.</p>
+        </div>
+        <div class="partner-grid">
+          <article class="partner-card">
+            <img src="images/fg.jpg" alt="Student holding books in front of a yellow wall" loading="lazy">
+            <h3>Art School Australia</h3>
+            <p>Discover new ideas, learn creative skills, and explore your talents.</p>
+            <a href="#contact">MORE</a>
+          </article>
+          <article class="partner-card">
+            <img src="images/22.jpg" alt="Student with notebooks in front of a pink wall" loading="lazy">
+            <h3>English in Argentina</h3>
+            <p>Practice speaking and get the confidence to communicate in English.</p>
+            <a href="#contact">MORE</a>
+          </article>
+          <article class="partner-card">
+            <img src="images/fgfgg.jpg" alt="Student with a stack of books and an apple" loading="lazy">
+            <h3>Engineering</h3>
+            <p>Learn how things work and turn your own ideas into projects.</p>
+            <a href="#contact">MORE</a>
+          </article>
+        </div>
+        <p class="image-credit partners-credit">Images from supplied materials</p>
+      </section>
+
+      <!-- Information cards -->
+      <section class="programs" id="programs" aria-labelledby="programs-heading">
+        <div class="wrapper programs-inner">
+          <div class="section-heading">
+            <h2 id="programs-heading">Integrity. Uniqueness. Enjoyment.<br> Ever Forward.</h2>
+            <p>Our mission is to share knowledge, create opportunities<br class="desktop-only"> and help every student reach their potential.</p>
+          </div>
+          <div class="program-grid">
+            <article class="program-card"><h3>WHO WE ARE</h3><p>We are a friendly team of educators who believe that everyone can enjoy learning.</p><a href="#mission" aria-label="Read about who we are">→</a></article>
+            <article class="program-card"><h3>WHAT WE DO</h3><p>We provide interesting lessons, useful resources, and practical activities for students.</p><a href="#mission" aria-label="Read what we do">→</a></article>
+            <article class="program-card"><h3>SUMMER PROGRAMS</h3><p>Join our programs to build new skills, make friends, and explore different subjects.</p><a href="#contact" aria-label="Learn about summer programs">→</a></article>
+            <article class="program-card"><h3>RESOURCES</h3><p>Explore educational materials and discover new ideas for learning every day.</p><a href="#contact" aria-label="Learn about our resources">→</a></article>
+            <article class="program-card"><h3>WEBINARS</h3><p>Take part in online lessons, ask questions, and learn directly from educators.</p><a href="#contact" aria-label="Learn about webinars">→</a></article>
+            <article class="program-card"><h3>OUR TEAM</h3><p>Meet the people who are ready to support you and help you achieve your goals.</p><a href="#team" aria-label="Meet our team">→</a></article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Statistics -->
+      <section class="statistics wrapper" id="results" aria-label="Our results">
+        <div class="stat-grid">
+          <div class="stat"><strong>16k</strong><span>happy students</span></div>
+          <div class="stat"><strong>19%</strong><span>sample headline</span></div>
+          <div class="stat"><strong>32</strong><span>our courses</span></div>
+          <div class="stat"><strong>394</strong><span>learners worldwide</span></div>
+        </div>
+        <div class="statistics-copy">
+          <h2>The highest quality online<br> courses from institutions</h2>
+          <p>Choose a course, discover something new, and get closer to your goals.</p>
+          <a class="yellow-button" href="#mission">LEARN MORE</a>
+        </div>
+      </section>
+    </div>
+
+    <!-- Mission: blue background turns white -->
+    <section class="mission" id="mission" aria-labelledby="mission-heading">
+      <div class="wrapper mission-wrap">
+        <div class="mission-photo-wrap"><img src="images/jhj.jpg" alt="Woman studying with a laptop in a classroom" loading="lazy"></div>
+        <div class="mission-card">
+          <h2 id="mission-heading">Our Mission</h2>
+          <p>Our mission is to make education simple and interesting. We want to give every student the opportunity to learn, explore new ideas and grow at their own pace.</p>
+          <p class="mission-credit">Image from supplied materials</p>
+          <a class="yellow-button" href="#contact">LEARN MORE</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Teachers and team -->
+    <section class="team wrapper" id="team" aria-label="Meet our team">
+      <div class="team-entry team-entry-left">
+        <div class="team-copy"><h3>Mary Norton</h3><p>We are proud to help learners find new paths. Every student has the ability to succeed with encouragement and practice.</p></div>
+        <img src="images/758b5559-c3ba-4155-a732-78d6fab8bfcd.jpg" alt="Mary Norton" loading="lazy">
+        <span class="social-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.16 5.66a8.3 8.3 0 0 1-2.38.65 4.16 4.16 0 0 0 1.82-2.3 8.3 8.3 0 0 1-2.64 1.01 4.14 4.14 0 0 0-7.05 3.77 11.76 11.76 0 0 1-8.54-4.33 4.14 4.14 0 0 0 1.28 5.52 4.12 4.12 0 0 1-1.87-.52v.05a4.14 4.14 0 0 0 3.32 4.06 4.06 0 0 1-1.87.07 4.15 4.15 0 0 0 3.87 2.87 8.33 8.33 0 0 1-5.15 1.78c-.33 0-.66-.02-.99-.06a11.72 11.72 0 0 0 6.35 1.86c7.62 0 11.79-6.31 11.79-11.79v-.53a8.4 8.4 0 0 0 2.06-2.14z"/></svg></span>
+      </div>
+      <div class="team-entry team-entry-right">
+        <span class="social-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.16 5.66a8.3 8.3 0 0 1-2.38.65 4.16 4.16 0 0 0 1.82-2.3 8.3 8.3 0 0 1-2.64 1.01 4.14 4.14 0 0 0-7.05 3.77 11.76 11.76 0 0 1-8.54-4.33 4.14 4.14 0 0 0 1.28 5.52 4.12 4.12 0 0 1-1.87-.52v.05a4.14 4.14 0 0 0 3.32 4.06 4.06 4.06 0 0 1-1.87.07 4.15 4.15 0 0 0 3.87 2.87 8.33 8.33 0 0 1-5.15 1.78c-.33 0-.66-.02-.99-.06a11.72 11.72 0 0 0 6.35 1.86c7.62 0 11.79-6.31 11.79-11.79v-.53a8.4 8.4 0 0 0 2.06-2.14z"/></svg></span>
+        <img src="images/a7c767cf-3a26-4f01-874d-14261d2c39a7.jpg" alt="Nick Hudson" loading="lazy">
+        <div class="team-copy"><h3>Nick Hudson</h3><p>We help students from different countries develop their skills, learn new things and believe in themselves.</p></div>
+      </div>
+      <div class="team-entry team-entry-left">
+        <div class="team-copy"><h3>Rose Hunter</h3><p>With us, learning is fun and inspiring. Everyone can discover their strengths and achieve great results.</p></div>
+        <img src="images/e916e899-9128-4aac-8760-007d5815c973.jpg" alt="Rose Hunter" loading="lazy">
+        <span class="social-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.16 5.66a8.3 8.3 0 0 1-2.38.65 4.16 4.16 0 0 0 1.82-2.3 8.3 8.3 0 0 1-2.64 1.01 4.14 4.14 0 0 0-7.05 3.77 11.76 11.76 0 0 1-8.54-4.33 4.14 4.14 0 0 0 1.28 5.52 4.12 4.12 0 0 1-1.87-.52v.05a4.14 4.14 0 0 0 3.32 4.06 4.06 0 0 1-1.87.07 4.15 4.15 0 0 0 3.87 2.87 8.33 8.33 0 0 1-5.15 1.78c-.33 0-.66-.02-.99-.06a11.72 11.72 0 0 0 6.35 1.86c7.62 0 11.79-6.31 11.79-11.79v-.53a8.4 8.4 0 0 0 2.06-2.14z"/></svg></span>
+      </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section class="testimonial" aria-labelledby="testimonial-heading">
+      <div class="wrapper testimonial-wrap">
+        <div class="quote-icon" aria-hidden="true">❞</div>
+        <img src="images/444.jpg" alt="Smiling student in a yellow sweater" loading="lazy">
+        <div class="quote-box"><h2 id="testimonial-heading">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</h2></div>
+        <p class="quote-author">- May Hawkins, General Manager Operations -</p>
+        <p class="image-credit">Images from supplied materials</p>
+      </div>
+    </section>
+
+    <!-- Contact form -->
+    <section class="contact wrapper" id="contact" aria-labelledby="contact-heading">
+      <div class="contact-top">
+        <img class="contact-photo" src="images/ddf.jpg" alt="Smiling student in a yellow sweater giving thumbs up" loading="lazy">
+        <div class="contact-form-wrap">
+          <h2 id="contact-heading">Contact Us</h2>
+          <form id="contact-form">
+            <label for="contact-name">Name</label>
+            <input type="text" name="name" id="contact-name" placeholder="Enter your Name" autocomplete="name" required>
+            <label for="contact-email">Email</label>
+            <input type="email" name="email" id="contact-email" placeholder="Enter a valid email address" autocomplete="email" required>
+            <label for="contact-message">Message</label>
+            <textarea name="message" id="contact-message" rows="3" required></textarea>
+            <label class="terms-check"><input type="checkbox" id="contact-consent" required><span>I accept the <a href="#privacy-info">Terms of Service</a></span></label>
+            <button class="submit-btn" type="submit">SUBMIT</button>
+            <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+      <div class="contact-info">
+        <article><h3>☎ CALL US</h3><p>1 (234) 567-891<br>1 (234) 987-654</p></article>
+        <article><h3>♧ LOCATION</h3><p>123 Rock Street, 21 Avenue, New York, NY 92103-9000</p></article>
+        <article><h3>◷ HOURS</h3><p>Mon - Fri: 11 am - 8 pm<br>Sat, Sun: 6 am - 8 pm</p></article>
+      </div>
+      <p class="image-credit contact-credit">Images from supplied materials</p>
+    </section>
+  </main>
+  <footer class="footer" id="privacy-info">
+    <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+    <p class="footer-small">Demo terms: the contact form does not send or store information. Educational project based on the supplied reference.</p>
+  </footer>
+</body>
+</html>

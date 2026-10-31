@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A simple real estate landing page showcasing apartments, cities, and homes.">
+  <title>Exclusive Apartments | Real Estate</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navigation content-width" aria-label="Main navigation">
+      <a href="#home" class="mobile-brand">Real Estate</a>
+      <button type="button" class="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#locations">Landing</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#agents">Team</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Introductory banner -->
+    <section class="hero content-width" id="home" aria-labelledby="hero-title">
+      <img class="hero-image" src="images/la.jpeg" alt="White contemporary house with a lawn">
+      <div class="hero-shade"></div>
+      <div class="hero-text">
+        <h1 id="hero-title">Latest projects</h1>
+        <p>Sample text. Click to select the Text Element.</p>
+        <p class="image-credit">Image from <span>Freepik</span></p>
+        <form class="subscribe-form" data-demo-form>
+          <label class="visually-hidden" for="hero-email">Email address</label>
+          <input id="hero-email" name="email" type="email" autocomplete="email" placeholder="Enter a valid email address" required>
+          <button type="submit">SUBMIT</button>
+        </form>
+        <p class="form-feedback" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <!-- Property locations -->
+    <section class="locations-band" id="locations" aria-label="Available locations">
+      <div class="locations-grid content-width">
+        <button class="location-card" type="button" data-city="Paris" data-picture="images/paris.jpeg" aria-label="View properties in Paris">
+          <img src="images/paris.jpeg" alt="Modern glass building in Paris">
+          <strong>Paris</strong>
+          <span>10 Property</span>
+        </button>
+        <button class="location-card" type="button" data-city="New York" data-picture="images/pexels-photo-325185.jpeg" aria-label="View properties in New York" aria-pressed="true">
+          <img src="images/pexels-photo-325185.jpeg" alt="City buildings emerging above clouds">
+          <strong>New York</strong>
+          <span>40 Property</span>
+        </button>
+        <button class="location-card" type="button" data-city="Los Angeles" data-picture="images/la.jpeg" aria-label="View properties in Los Angeles">
+          <img src="images/la.jpeg" alt="Modern white house in Los Angeles">
+          <strong>Los Angeles</strong>
+          <span>34 property</span>
+        </button>
+        <button class="location-card" type="button" data-city="Chicago" data-picture="images/pexels-photo-1029615.jpeg" aria-label="View properties in Chicago">
+          <img src="images/pexels-photo-1029615.jpeg" alt="Modern building against blue sky">
+          <strong>Chicago</strong>
+          <span>20 Property</span>
+        </button>
+        <button class="location-card" type="button" data-city="Verona" data-picture="images/pexels-photo-2090651.jpeg" aria-label="View properties in Verona">
+          <img src="images/pexels-photo-2090651.jpeg" alt="Pink European apartment building">
+          <strong>Verona</strong>
+          <span>60 Property</span>
+        </button>
+        <button class="location-card" type="button" data-city="Tokio" data-picture="images/pexels-photo-1769369.jpeg" aria-label="View properties in Tokio">
+          <img src="images/pexels-photo-1769369.jpeg" alt="Tall buildings seen from below">
+          <strong>Tokio</strong>
+          <span>56 Property</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Location feature -->
+    <section class="city-feature content-width" id="about">
+      <h2 id="city-heading">New York</h2>
+      <p class="section-description">Sample text. Click to select the Text Element. Image from <span>Freepik</span></p>
+      <img id="city-feature-picture" class="wide-photo" src="images/pexels-photo-325185.jpeg" alt="Clouds surrounding city skyscrapers">
+    </section>
+
+    <!-- Six photos arranged in a grid -->
+    <section class="photo-gallery content-width" id="gallery" aria-label="Property photo gallery">
+      <button type="button" class="gallery-item" data-gallery-image="images/house-isolated-field.jpg" data-gallery-alt="House with white facade and dark roof" aria-label="Open house photo">
+        <img src="images/house-isolated-field.jpg" alt="House with white facade and dark roof" loading="lazy">
+      </button>
+      <button type="button" class="gallery-item" data-gallery-image="images/apartment-building-city-with-copy-space.jpg" data-gallery-alt="Apartment building with yellow accents" aria-label="Open apartment building photo">
+        <img src="images/apartment-building-city-with-copy-space.jpg" alt="Apartment building with yellow accents" loading="lazy">
+      </button>
+      <button type="button" class="gallery-item" data-gallery-image="images/la.jpeg" data-gallery-alt="Modern white house" aria-label="Open modern house photo">
+        <img src="images/la.jpeg" alt="Modern white house" loading="lazy">
+      </button>
+      <button type="button" class="gallery-item" data-gallery-image="images/pexels-photo-3874015.jpeg" data-gallery-alt="Yellow cafe facade and outdoor seating" aria-label="Open yellow facade photo">
+        <img src="images/pexels-photo-3874015.jpeg" alt="Yellow cafe facade and outdoor seating" loading="lazy">
+      </button>
+      <button type="button" class="gallery-item" data-gallery-image="images/pexels-photo-3855622.jpeg" data-gallery-alt="Skyscrapers from ground level" aria-label="Open skyscrapers photo">
+        <img src="images/pexels-photo-3855622.jpeg" alt="Skyscrapers from ground level" loading="lazy">
+      </button>
+      <button type="button" class="gallery-item" data-gallery-image="images/low-angle-shot-facade-white-modern-building-blue-clear-sky.jpg" data-gallery-alt="White apartment complex" aria-label="Open apartment complex photo">
+        <img src="images/low-angle-shot-facade-white-modern-building-blue-clear-sky.jpg" alt="White apartment complex" loading="lazy">
+      </button>
+    </section>
+
+    <!-- Information about agents -->
+    <section class="agents content-width" id="agents" aria-labelledby="agents-title">
+      <div class="keys-panel">
+        <img src="images/wooden-keychain-white.jpg" alt="Metal house keys and a small wooden house keyring">
+      </div>
+      <div class="agents-panel">
+        <h2 id="agents-title">Trusted By Best<br>Exclusive Agents</h2>
+        <p>Sample text. Click to select the Text Element.</p>
+        <ul>
+          <li>Find excellent deals</li>
+          <li>Friendly host &amp; Fast support</li>
+          <li>List your own property</li>
+        </ul>
+        <p class="image-credit">Image from <span>Freepik</span></p>
+      </div>
+    </section>
+
+    <!-- Featured apartments -->
+    <section class="exclusive content-width" aria-labelledby="exclusive-title">
+      <h2 id="exclusive-title">Exclusive apartments</h2>
+      <p class="section-description">Sample text. Click to select the Text Element. Image from <span>Freepik</span></p>
+      <img class="wide-photo" src="images/low-angle-shot-facade-white-modern-building-blue-clear-sky.jpg" alt="Modern white apartment building viewed from below" loading="lazy">
+    </section>
+
+    <!-- Footer contact form -->
+    <section class="contact-band" id="contact" aria-labelledby="contact-title">
+      <div class="content-width">
+        <h2 id="contact-title">Get Your Dream House</h2>
+        <p>Sample text. Click to select the Text Element.</p>
+        <form class="contact-form" data-demo-form>
+          <label for="contact-name">Name</label>
+          <input id="contact-name" name="name" type="text" placeholder="Enter your Name" autocomplete="name" required>
+          <label for="contact-email">Email</label>
+          <input id="contact-email" name="email" type="email" placeholder="Enter a valid email address" autocomplete="email" required>
+          <button type="submit">SUBMIT</button>
+        </form>
+        <p class="form-feedback" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Sample text. Click to select the Text Element.</p>
+    <p class="footer-small">Real estate website · Practical web programming project</p>
+  </footer>
+
+  <!-- Image preview: pressing Escape or the close button exits the dialog. -->
+  <dialog class="photo-dialog" aria-label="Photo preview">
+    <button type="button" class="dialog-close" aria-label="Close photo preview">×</button>
+    <img src="" alt="">
+  </dialog>
+</body>
+</html>

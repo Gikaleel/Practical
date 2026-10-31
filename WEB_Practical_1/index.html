@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Практична робота з вебтехнологій: макет із шести маркетингових карток.">
+  <title>Практична робота №1 — Маркетингові картки</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <main class="services" aria-labelledby="page-title">
+    <h1 class="visually-hidden" id="page-title">Маркетингові послуги</h1>
+
+    <div class="services-grid">
+      <article class="service-card card--light">
+        <h2 class="card-title"><span class="highlight highlight--green">Search engine</span><br><span class="highlight highlight--green">optimization</span></h2>
+        <img class="card-illustration" src="assets/img_1.svg" alt="Збільшувальне скло та елементи пошуку">
+        <button class="learn-more" type="button" data-service="seo" aria-label="Докладніше про Search engine optimization">
+          <span class="round-arrow" aria-hidden="true">↗</span><span>Learn more</span>
+        </button>
+      </article>
+
+      <article class="service-card card--green">
+        <h2 class="card-title"><span class="highlight highlight--white">Pay-per-click</span><br><span class="highlight highlight--white">advertising</span></h2>
+        <img class="card-illustration" src="assets/img_3.svg" alt="Вебвікно та курсор миші">
+        <button class="learn-more" type="button" data-service="ppc" aria-label="Докладніше про Pay-per-click advertising">
+          <span class="round-arrow" aria-hidden="true">↗</span><span>Learn more</span>
+        </button>
+      </article>
+
+      <article class="service-card card--dark">
+        <h2 class="card-title"><span class="highlight highlight--white">Social Media</span><br><span class="highlight highlight--white">Marketing</span></h2>
+        <img class="card-illustration" src="assets/img_2.svg" alt="Дописи, вподобання та реакції у соціальних мережах">
+        <button class="learn-more" type="button" data-service="social" aria-label="Докладніше про Social Media Marketing">
+          <span class="round-arrow" aria-hidden="true">↗</span><span>Learn more</span>
+        </button>
+      </article>
+
+      <article class="service-card card--light">
+        <h2 class="card-title"><span class="highlight highlight--green">Email</span><br><span class="highlight highlight--green">Marketing</span></h2>
+        <img class="card-illustration" src="assets/img_4.svg" alt="Конверти, що рухаються по вигнутій траєкторії">
+        <button class="learn-more" type="button" data-service="email" aria-label="Докладніше про Email Marketing">
+          <span class="round-arrow" aria-hidden="true">↗</span><span>Learn more</span>
+        </button>
+      </article>
+
+      <article class="service-card card--green">
+        <h2 class="card-title"><span class="highlight highlight--white">Content</span><br><span class="highlight highlight--white">Creation</span></h2>
+        <img class="card-illustration" src="assets/img_5.svg" alt="Елементи інтерфейсу створення контенту">
+        <button class="learn-more" type="button" data-service="content" aria-label="Докладніше про Content Creation">
+          <span class="round-arrow" aria-hidden="true">↗</span><span>Learn more</span>
+        </button>
+      </article>
+
+      <article class="service-card card--dark">
+        <h2 class="card-title"><span class="highlight highlight--green">Analytics and</span><br><span class="highlight highlight--green">Tracking</span></h2>
+        <img class="card-illustration" src="assets/img_6.svg" alt="Графіки, звіти та кругова діаграма">
+        <button class="learn-more" type="button" data-service="analytics" aria-label="Докладніше про Analytics and Tracking">
+          <span class="round-arrow" aria-hidden="true">↗</span><span>Learn more</span>
+        </button>
+      </article>
+    </div>
+  </main>
+
+  <footer class="page-footer">
+    Практична робота №1 · <a href="periodic-table.html">Переглянути періодичну таблицю</a>
+  </footer>
+
+  <dialog class="service-dialog" id="service-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-content">
+      <button class="dialog-close" id="dialog-close" aria-label="Закрити вікно" type="button">×</button>
+      <h2 id="dialog-title"></h2>
+      <p id="dialog-text"></p>
+    </div>
+  </dialog>
+</body>
+</html>
